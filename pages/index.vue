@@ -1,6 +1,7 @@
 <template>
-  <div>Hello from the main page!</div>
-  <Button />
+  <div>
+    <div>Hello from the main page!</div>
+  </div>
 </template>
 
 <script setup>

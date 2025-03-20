@@ -1,7 +1,19 @@
 <template>
   <div class="mx-auto container max-w-2xl">
-    <Menu />
-    <main class="p-2">
+    <header class="flex justify-between items-center mt-5">
+      <div class="flex items-center">
+        <div>
+          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">
+            이상훈
+          </NuxtLink>
+        </div>
+        <Menu />
+      </div>
+      <ClientOnly>
+        <ColorModeSelector />
+      </ClientOnly>
+    </header>
+    <main class="p-2 mt-10">
       <slot />
     </main>
   </div>
@@ -27,5 +39,9 @@ useHead({
 <style>
 body {
   font-family: "Roboto";
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>

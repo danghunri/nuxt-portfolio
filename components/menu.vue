@@ -1,21 +1,20 @@
 <template>
-  <header class="flex justify-between items-center mt-5">
-    <div>
-      <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">
-        이상훈
-      </NuxtLink>
-    </div>
-    <nav class="font-mono font-">
-      <ul class="flex space-x-4">
-        <li>
-          <NuxtLink to="/" class="link">Main</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about" class="link">About</NuxtLink>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="font-mono font-">
+    <ul class="flex space-x-4">
+      <li>
+        <NuxtLink to="/" class="link">Main</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/about" class="link">About</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/projects" class="link">Projects</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/blog" class="link">Blog</NuxtLink>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped>
