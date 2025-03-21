@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="not-prose">
     <ul>
       <li v-for="post in posts" :key="post.path">
         <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
@@ -15,4 +15,5 @@ const { data: posts } = await useAsyncData("blog-list", () => {
     .select("path", "title")
     .all();
 });
+console.log(posts.value);
 </script>
